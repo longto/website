@@ -1,0 +1,54 @@
+.text-white {
+	color: #FFFFFF !important;
+}
+.icon-button {
+	padding-right: 5px;
+}
+.intro {
+	position: relative;
+	overflow: hidden;
+	background-image: url('../images/l4lcenter.png');
+}
+.intro > .l4lcenter {
+	position: absolute;
+	top: 0;
+	background-size: cover;
+	display: block;
+	filter: blur(5px);
+	-webkit-filter: blur(5px);
+	height: 800px;
+	left: 0;
+	position: fixed;
+	right: 0;
+	z-index: 1;
+}
+.about-content {
+	color: #7cb9d5;
+}
+.about-content .thumbnail {
+	height: 350px;
+	padding: 50px 0;
+	border: none;
+	box-shadow: 0 4px 0 #e5e6e6;
+}
+.about-body .row {
+	background-color: #f3f3f3;
+}
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+	width: 100%;
+	margin: auto;
+}
+.carousel-control.left {
+	background-image: linear-gradient(to right, rgba(0, 0, 0, .1) 0, rgba(0, 0, 0, .0001) 100%);
+}
+.carousel-control.right{
+	background-image: linear-gradient(to right, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .1) 100%);
+}
+.media-list .media {
+  border-bottom: 1px dashed #efefef;
+  margin-bottom: 25px;
+}
+.media-list{
+	max-height: 300px;
+	overflow-y: auto;
+}

@@ -1,38 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="bootstrap/3.3.5/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src"bootstrap/3.3.5/js/bootstrap.min.js"></script>
-</head>
-<body>
-
-<div class="container">
-  <div class="jumbotron">
-    <h1>My First Bootstrap Page</h1>
-    <p>Resize this responsive page to see the effect!</p> 
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="libs/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">WebSiteName</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Page 1-1</a></li>
+                  <li><a href="#">Page 1-2</a></li>
+                  <li><a href="#">Page 1-3</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Page 2</a></li>
+              <li><a href="#">Page 3</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <form class="navbar-form navbar-right">
+                <div class="form-group ">
+                  <input type="text" placeholder="Email" class="form-control">
+                </div>
+                <div class="form-group">
+                  <input type="password" placeholder="Password" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-user icon-button"/></span>Sign Up</button>
+                <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-log-in icon-button"/></span>Sign in</button>
+              </form>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </nav>
+  </header>
+  <div class="jumbotron intro">
+    <div class="container content">
+      <h1 class="text-center">Learn for Life</h1>
+      <p >This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+      <p class="text-center"><a class="btn btn-primary btn-lg" href="#" role="button">Learn more »</a></p>
+    </div>
   </div>
-  <div class="row">
-    <div class="col-sm-4">
-      <h3>Column 1</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-    </div>
-    <div class="col-sm-4">
-      <h3>Column 2</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-    </div>
-    <div class="col-sm-4">
-      <h3>Column 3</h3>        
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+  <div class="container">
+    <!-- Example row of columns -->
+    <div class="row">
+      <div class="col-md-4">
+        <h2>Heading</h2>
+        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+        <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+      </div>
+      <div class="col-md-4">
+        <h2>Heading</h2>
+        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+        <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+      </div>
+      <div class="col-md-4">
+        <h2>Heading</h2>
+        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+      </div>
     </div>
   </div>
-</div>
-
+  <div class="container-fluid" >
+    <div class="row about-body">
+      <div class="col-xs-12 col-sm-12 col-md-12">
+        <div class="row">
+          <div class="container">
+            <div class="row about-header clearfix">
+              <div class="col-xs-12">
+                <div class="text-center">
+                  <h1>OUR SERVICES</h1>
+                  <p>Addition IT is an IT security specialist with expertise in identity and access management and secure cloud services.</p>
+                </div>
+              </div>
+            </div>
+            <div class="row about-content">
+              <div class="col-xs-12 col-sm-3 col-md-3">
+                <div class="thumbnail text-center">
+                  <i class="fa fa-5x fa-desktop"></i>
+                  <div class="caption">
+                    <h3>INFRASTRUCTURE</h3>
+                    <p>It is not always all system functions optimally in an IT environment. That's about as different departments in an organization.</p>
+                    <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-3 col-md-3">
+                <div class="thumbnail text-center">
+                  <i class="fa fa-5x fa-user"></i>
+                  <div class="caption">
+                    <h3>IDENTITY MANAGEMENT</h3>
+                    <p>Organizations in both the public and private sectors have been growing problems of identity management.</p>
+                    <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-3 col-md-3">
+                <div class="thumbnail text-center">
+                  <i class="fa fa-5x fa-line-chart"></i>
+                  <div class="caption">
+                    <h3>BUSINESS DEVELOPMENT</h3>
+                    <p>By analyzing the business - processes, IT systems, users and routines - do you find out where you are.</p>
+                    <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-3 col-md-3">
+                <div class="thumbnail text-center">
+                  <i class="fa fa-5x fa-list-alt"></i>
+                  <div class="caption">
+                    <h3>PORTALS</h3>
+                    <p>A portal enables the presentation of news and information, and access to operational systems in a whole new way.</p>
+                    <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container col-xs-12">
+    <div class="text-center">
+      <h1>OUR CLASSES</h1>
+      <p>Addition IT is an IT security specialist with expertise in identity and access management and secure cloud services.</p>
+    </div>
+    <div id="myCarousel" class="carousel slide col-xs-8" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="http://www.w3schools.com/bootstrap/img_chania.jpg" alt="Chania" width="460" height="345">
+          <div class="carousel-caption">
+            <h3>Chania</h3>
+            <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="http://www.w3schools.com/bootstrap/img_chania2.jpg" alt="Chania" width="460" height="345">
+          <div class="carousel-caption">
+            <h3>Chania</h3>
+            <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+          </div>
+        </div>
+        
+        <div class="item">
+          <img src="http://www.w3schools.com/bootstrap/img_flower.jpg" alt="Flower" width="460" height="345">
+          <div class="carousel-caption">
+            <h3>Flowers</h3>
+            <p>Beatiful flowers in Kolymbari, Crete.</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="http://www.w3schools.com/bootstrap/img_flower2.jpg" alt="Flower" width="460" height="345">
+          <div class="carousel-caption">
+            <h3>Flowers</h3>
+            <p>Beatiful flowers in Kolymbari, Crete.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <div class="twt-wrapper col-xs-4">
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          Twitter Feed Example
+        </div>
+        <div class="panel-body">
+          <textarea class="form-control" placeholder="Enter here for tweet..." rows="3"></textarea>
+          <br>
+          <a href="#" class="btn btn-primary btn-sm pull-right">Tweet</a>
+          <div class="clearfix"></div>
+          <hr>
+          <ul class="media-list">
+            <li class="media">
+              <a href="#" class="pull-left">
+                <img src="http://www.designbootstrap.com/livedemos/2015/03/05/twitter-feed/assets/img/1.png" alt="" class="img-circle">
+              </a>
+              <div class="media-body">
+                <span class="text-muted pull-right">
+                  <small class="text-muted">30 min ago</small>
+                </span>
+                <strong class="text-success">@ Rexona Kumi</strong>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Lorem ipsum dolor sit amet, <a href="#"># consectetur adipiscing </a>.
+                </p>
+              </div>
+            </li>
+            <li class="media">
+              <a href="#" class="pull-left">
+                <img src="http://www.designbootstrap.com/livedemos/2015/03/05/twitter-feed/assets/img/2.png" alt="" class="img-circle">
+              </a>
+              <div class="media-body">
+                <span class="text-muted pull-right">
+                  <small class="text-muted">30 min ago</small>
+                </span>
+                <strong class="text-success">@ John Doe</strong>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Lorem ipsum dolor <a href="#"># ipsum dolor </a>adipiscing elit.
+                </p>
+              </div>
+            </li>
+            <li class="media">
+              <a href="#" class="pull-left">
+                <img src="http://www.designbootstrap.com/livedemos/2015/03/05/twitter-feed/assets/img/3.png" alt="" class="img-circle">
+              </a>
+              <div class="media-body">
+                <span class="text-muted pull-right">
+                  <small class="text-muted">30 min ago</small>
+                </span>
+                <strong class="text-success">@ Madonae Jonisyi</strong>
+                <p>
+                  Lorem ipsum dolor <a href="#"># sit amet</a> sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+            </li>
+          </ul>
+          <span class="text-danger">237K users active</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <hr>
+    <footer>
+      <p>© Company 2014</p>
+    </footer>
+  </div>
+  <link rel="stylesheet" href="css/style.css">
 </body>
 </html>
